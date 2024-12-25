@@ -2,16 +2,16 @@ using UnityEngine;
 
 public abstract class HealthView : MonoBehaviour
 {
-    [SerializeField] protected Healther _healther;
+    [SerializeField] protected Health Health;
 
     protected void OnEnable()
     {
-        _healther.HealthChanged += OnHealthChanged;
+        Health.ValueChanged += OnHealthChanged;
     }
 
     protected void OnDisable()
     {
-        _healther.HealthChanged -= OnHealthChanged;
+        Health.ValueChanged -= OnHealthChanged;
     }
 
     protected void OnHealthChanged(float currentHealth)

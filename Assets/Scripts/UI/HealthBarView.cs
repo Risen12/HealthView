@@ -4,17 +4,17 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Slider))]
 public class HealthBarView : HealthView
 {
-    private Slider _slider;
+    protected Slider Slider;
 
-    private void Awake()
+    protected void Awake()
     {
-        _slider = GetComponent<Slider>();
-        _slider.minValue = _healther.MinHealth;
-        _slider.maxValue = _healther.MaxHealth;
+        Slider = GetComponent<Slider>();
+        Slider.minValue = Health.MinHealth;
+        Slider.maxValue = Health.MaxHealth;
     }
 
     protected override void ShowHealth(float value)
     {
-        _slider.value = Mathf.Clamp(value, _healther.MinHealth, _healther.MaxHealth);
+        Slider.value = Mathf.Clamp(value, Health.MinHealth, Health.MaxHealth);
     }
 }

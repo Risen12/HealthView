@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d86272c4a829349b878ee61bb15f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healther: {fileID: 968537436}
+  Health: {fileID: 968537436}
   _damagePoints: 15
 --- !u!1 &486719941
 GameObject:
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c47874138f3dc45a193d1b78d91631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healther: {fileID: 968537436}
+  Health: {fileID: 968537436}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,7 +1169,7 @@ GameObject:
   - component: {fileID: 968537435}
   - component: {fileID: 968537436}
   m_Layer: 0
-  m_Name: Healther
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,8 +1202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f10cb55788408b45bce85b64bf71d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
-  _minHealth: 0
+  _maxValue: 100
+  _minValue: 0
 --- !u!1 &975000991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec341b7cceb01c4aa016c89cdccf34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healther: {fileID: 968537436}
+  Health: {fileID: 968537436}
 --- !u!1 &1338179462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,9 +2027,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e34ef35fc08e04e81ce27c8cdfdef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healther: {fileID: 968537436}
+  Health: {fileID: 968537436}
   _smoothIndex: 0.12
-  _coroutineWaitSeconds: 0
 --- !u!1 &1615323446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cb9ccf0dce56b478396c066c858c96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healther: {fileID: 968537436}
+  Health: {fileID: 968537436}
   _healthPointsToRestore: 10
 --- !u!1 &2066805116
 GameObject:
